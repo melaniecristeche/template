@@ -1,0 +1,28 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 34rem) { 
+
+    /** header links **/
+
+.top-header {
+
+    flex: auto;
+  }
+  
+  .tools {
+    flex-flow: row;
+  }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    section .delorean-upgrades {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);}
+    }

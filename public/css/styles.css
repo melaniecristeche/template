@@ -4,5 +4,53 @@
 *:after {
   box-sizing: border-box;
 
+};
+
+/** header links **/
+
+.top-header {
+
+  flex: auto;
 }
 
+.tools {
+  flex-flow: row;
+}
+
+/** body section **/
+
+nav li {
+  color: white;
+  background-color: rgb(71, 83, 109);
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header,
+main,
+footer {
+  margin: 1.25em auto;
+  max-width: 960px;
+}
+
+h1 {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0;
+}
