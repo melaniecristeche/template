@@ -3,17 +3,9 @@
 
     /** header links **/
 
-.top-header {
-
-    flex: auto;
-  }
-  
-  .tools {
-    flex-flow: row;
-  }
-
-    nav ul li a {
+ nav ul li  {
         padding: 1rem;
+        display: flex;
     }
     h1 {
         font-size: 3rem;
@@ -22,14 +14,40 @@
         font-size: 2.5rem;
     }
 
-    section .delorean-upgrades {
+    section #delorean-upgrades {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);}
+        grid-gap: 20px;
     }
 
-    div .own {
-        background-color: rgba(250, 235, 215, 0.76);
+    div #own {
+        background-color: rgba(215, 229, 250, 0.76);
         opacity: 50%;
-        border: 5px solid gray;
+        border: 2px solid gray;
+        margin: 15px;
+        padding: 15px;
       }
+
+      .own-button {
+        background-color: #0c4374;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+      }
+
+ 
+      #delorean-upgrades img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+    
+      img {
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+    
+    }

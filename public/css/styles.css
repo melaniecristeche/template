@@ -7,19 +7,20 @@
 };
 
 /** header links **/
-
-.top-header {
-
-  flex: auto;
-}
-
-.tools {
-  flex-flow: row;
-}
+#top-header {
+  display: flex;
+      flex: auto;
+    }
+    
+    #tools {
+      display: block;
+    }
+  
+     
 
 /** body section **/
 
-nav li {
+nav ul li {
   color: white;
   background-color: rgb(71, 83, 109);
 }
