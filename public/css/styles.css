@@ -7,17 +7,37 @@
 };
 
 /** header links **/
+
 #top-header {
+
   display: flex;
-      flex: auto;
-    }
-    
-    #tools {
-      display: block;
-    }
+  justify-content: space-around;
+  }
+  
+  
+  div .nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    background-color: #0c4374;
+    padding: 20px;
+    justify-content: space-around;  
+  
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(163, 0, 0);
+    font-weight: bold;
+   
+  }
   
      
-
+div #title {
+  max-width: auto;
+  text-align: center;
+}
 /** body section **/
 
 nav ul li {
@@ -31,11 +51,12 @@ body {
   line-height: 1.5;
 }
 
-header,
+header, 
+body,
 main,
 footer {
   margin: 1.25em auto;
-  max-width: 960px;
+  max-width: 1260px;
 }
 
 h1 {
@@ -56,3 +77,71 @@ h3{
   padding: 0;
 }
 
+
+/* body {
+  border: 2px solid gray;
+  background-color: white;
+} */
+/* 
+html {
+  background-color: rgb(99, 96, 102) ;
+} */
+
+main .main-content
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+div .CarItem1 {
+  grid-area: 1 / 1 / 1 / 1;
+
+  background-color: #0c4374;
+  margin: 20px;
+}
+
+div .CarItem2 {
+  grid-area: 1 / 2 / 1 / 2;
+  background-color: #0c4374;
+  margin: 20px;
+}
+
+div .CarItem3 {
+  grid-area: 2 / 1 / 2 / 1;
+  background-color: #0c4374;
+  margin: 20px;
+}
+
+div .CarItem4 {
+  grid-area: 2 / 2 / 2 / 2;
+  background-color: #0c4374;
+  margin: 20px;
+}
+
+section #articles {
+  text-align: center;
+  grid-area: 1 / 3 / 2 / 3;
+  margin: 20px;
+}
+
+div .item {
+    background-color: rgba(215, 229, 250, 0.76);
+    margin: 15px;
+    padding: 15px;
+    max-width: 250px;
+    opacity: 80%;
+    position: absolute;
+  } 
+
+
+  .own-button {
+    background-color: #0c4374;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+  }
