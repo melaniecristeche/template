@@ -8,6 +8,10 @@
 
 /** header links **/
 
+#tools {
+  display: flex;
+}
+
 #top-header {
 
   display: flex;
@@ -19,7 +23,7 @@
     display: flex;
     list-style-type: none;
     gap: 20px;
-    background-color: #0c4374;
+    background-color: #1d2935;
     padding: 20px;
     justify-content: space-around;  
   
@@ -28,12 +32,15 @@
   
   a {
     text-decoration: none;
-    color: rgb(163, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
    
   }
   
-     
+  #tools a {
+    color: #000;
+  }
+
 div #title {
   max-width: auto;
   text-align: center;
@@ -98,25 +105,25 @@ main .main-content
 div .CarItem1 {
   grid-area: 1 / 1 / 1 / 1;
 
-  background-color: #0c4374;
+  background-color: #1d2935;
   margin: 20px;
 }
 
 div .CarItem2 {
   grid-area: 1 / 2 / 1 / 2;
-  background-color: #0c4374;
+  background-color: #1d2935;
   margin: 20px;
 }
 
 div .CarItem3 {
   grid-area: 2 / 1 / 2 / 1;
-  background-color: #0c4374;
+  background-color: #1d2935;
   margin: 20px;
 }
 
 div .CarItem4 {
   grid-area: 2 / 2 / 2 / 2;
-  background-color: #0c4374;
+  background-color: #1d2935;
   margin: 20px;
 }
 
@@ -127,7 +134,8 @@ section #articles {
 }
 
 div .item {
-    background-color: rgba(215, 229, 250, 0.76);
+    background-color: rgba(230, 230, 230, 0.76);
+    color: rgb(28, 128, 194);
     margin: 15px;
     padding: 15px;
     max-width: 250px;
@@ -137,7 +145,7 @@ div .item {
 
 
   .own-button {
-    background-color: #0c4374;
+    background-color: rgb(28, 128, 194);
     color: white;
     border: none;
     padding: 10px 20px;
