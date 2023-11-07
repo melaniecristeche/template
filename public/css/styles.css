@@ -4,7 +4,7 @@
 *:after {
   box-sizing: border-box;
 
-};
+}
 
 /** header links **/
 
@@ -42,7 +42,6 @@
   }
 
 div #title {
-  max-width: auto;
   text-align: center;
 }
 /** body section **/
