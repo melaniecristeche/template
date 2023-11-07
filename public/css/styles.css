@@ -8,8 +8,16 @@
 
 /** header links **/
 
-#tools {
+.siteName a {
+  color: black;
+  font-size: 3rem;
+  margin: 1.5rem;
+
+}
+#tools a {
   display: flex;
+  color: black;
+  font-size: 1.5rem;
 }
 
 #top-header {
@@ -26,7 +34,6 @@
     background-color: #1d2935;
     padding: 20px;
     justify-content: space-around;  
-  
   
   }
   
@@ -52,7 +59,7 @@ nav ul li {
 }
 
 body {
-  font-family: sans-serif;
+  font-family:'Times New Roman', Times, serif ;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -93,7 +100,7 @@ html {
   background-color: rgb(99, 96, 102) ;
 } */
 
-main .main-content
+div .content
 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
