@@ -7,7 +7,10 @@
 }
 
 /** header links **/
-
+ a {
+  color: white;
+ }
+ 
 .siteName a {
   color: black;
   font-size: 3rem;
