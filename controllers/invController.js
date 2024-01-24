@@ -20,3 +20,26 @@ invCont.buildByClassificationId = async function (req, res, next) {
 }
 
 module.exports = invCont
+
+// // assignment week 3 Updatte Controller to Use Model and Send Data to View
+
+// const inventoryController = {
+//   getInventoryItem: async (req, res) => {
+//     try {
+//       const itemId = req.params.id;
+//       const itemData = await inventoryModel.getInventoryItem(itemId);
+
+//       if (!itemData) {
+//         return res.status(404).send('Item not found');
+//       }
+
+//       const htmlContent = utilities.wrapDataInHTML(itemData);
+//       res.render('inventory/detail', { htmlContent });
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).send('Internal Server Error');
+//     }
+//   },
+// };
+
+// module.exports = inventoryController;

@@ -14,11 +14,7 @@ async function getClassifications(){
 async function getInventoryByClassificationId(classification_id) {
   try {
     const data = await pool.query(
-      `SELECT * FROM public.inventory AS i 
-      JOIN public.classification AS c 
-      ON i.classification_id = c.classification_id 
-      WHERE i.classification_id = $1`,
-      [classification_id]
+      `SELECT * FROM public.inventory AS i JOIN public.classification AS c ON i.classification_id = c.classification_id WHERE i.classification_id = $1`,[classification_id]
     )
     return data.rows
   } catch (error) {
@@ -26,4 +22,25 @@ async function getInventoryByClassificationId(classification_id) {
   }
 }
 
+
 module.exports = {getClassifications, getInventoryByClassificationId};
+
+// assignment week 3 Update Model to Fetch Inventory Item
+
+// const inventoryModel = {
+//   getInventoryItem: async (itemId) => {
+//     try {
+//       const query = 'SELECT * FROM inventory WHERE inv_id = $1';
+//       const values = [itemId];
+//       const { rows } = await pool.query(query, values);
+
+//       return rows[0];
+//     } catch (error) {
+//       throw error;
+//     }
+//   },
+// };
+
+// module.exports = inventoryModel;
+
+
